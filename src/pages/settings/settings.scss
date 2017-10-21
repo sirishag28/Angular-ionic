@@ -1,0 +1,48 @@
+page-settings {
+
+}
+.menu-icon{
+  color:orange;
+}
+.menu-icon1{
+  color:blue;
+}
+
+.menu-icon3{
+  color:#00FF00;
+}
+.menu-icon4{
+  color:#DC143C;
+}
+.menu-icon5{
+  color:orange;
+}
+.menu-icon6{
+  color:#00008B;
+}
+
+.suck {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  border: none;
+  font: normal normal bold 10px/normal "Creepster", Helvetica, sans-serif;
+  color: rgba(255,255,255,1);
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  text-shadow: 1px 1px 0 #2ecc71 , -1px -1px 0 #2ecc71 , 1px -1px 0 #2ecc71 , -1px 1px 0 #2ecc71 ;
+  -webkit-transition: text-shadow 500ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: text-shadow 500ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: text-shadow 500ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: text-shadow 500ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.suck:hover {
+  text-shadow: 1px 1px 8px rgba(46,204,113,0.5) , -1px -1px 8px rgba(46,204,113,0.5) , 1px -1px 8px rgba(46,204,113,0.5) , -1px 1px 8px rgba(46,204,113,0.5) ;
+  -webkit-transition: text-shadow 250ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: text-shadow 250ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: text-shadow 250ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: text-shadow 250ms cubic-bezier(0.42, 0, 0.58, 1);
+}

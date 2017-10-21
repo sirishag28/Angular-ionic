@@ -1,0 +1,30 @@
+<ion-header >
+  <ion-navbar color="primary">
+    <ion-toolbar >
+    <ion-buttons end>
+        <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+    </ion-buttons>
+      </ion-toolbar>
+  </ion-navbar>
+</ion-header>
+<!--json Added-->
+<ion-content class="card-background-page" >
+  <button ion-button outline  (click)="moveTo()" >More Languages</button>
+  <button ion-button color="dark" round icon-start (click)="moveBo()" >
+    <ion-icon name='construct' is-active="false" style="margin-top: 0px;"></ion-icon>
+    Tools
+  </button>
+  <ion-card *ngFor="let item of items">
+    <img src="assets/img/{{item.img}}"/>
+    <div class="card-title">{{item.title}}</div>
+    <button ion-button color="secondary">Read more</button>
+    <button ion-button color="danger" clear icon-only  (click)="openMenu()" >
+      <ion-icon name='trash' is-active="false"></ion-icon>
+    </button>
+  </ion-card>
+</ion-content>
+
+
+
+
+

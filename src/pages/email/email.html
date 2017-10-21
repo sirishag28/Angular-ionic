@@ -1,0 +1,25 @@
+
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Email</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <p style="text-align: center;">Welcome Back!</p><br/>
+  <span>Enter your email to sign in to your account</span><br/>
+  <ion-list>
+    <ion-item style="    border-top: 0px;">
+      <ion-label stacked>Username</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+  </ion-list>
+  <div padding>
+    <button ion-button color="light" block (click)="signInn()" (click)="doConfirm($index)">  <ion-icon name="log-in" class="hel"></ion-icon>&nbsp;Sign In</button>
+  </div>
+</ion-content>

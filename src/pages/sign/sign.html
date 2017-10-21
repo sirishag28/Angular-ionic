@@ -1,0 +1,38 @@
+
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Sign in</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only>
+          <ion-icon name='contact' ></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding >
+  <button ion-button color="light" full (click)="presentLoading()" > <ion-icon name='mail' class="mun mun1"></ion-icon>&nbsp;Sign in with email</button>
+  <ion-row>
+    <ion-col col-4><hr/></ion-col>
+    <ion-col col-4 style="text-align: center;">or</ion-col>
+    <ion-col col-4><hr/></ion-col>
+  </ion-row>
+        <button ion-button color="light" full ><img src="https://avatars0.githubusercontent.com/u/1342004?s=400&v=4"         style="width: 15px;"/>&nbsp;Sign in with Google</button>
+        <button ion-button color="light" full > <ion-icon name='logo-facebook' class="mun mun3"></ion-icon>&nbsp;Sign         in with Facebook</button>
+  <ion-row>
+    <ion-col col-6 style="float: right">New here?</ion-col>
+    <ion-col col-6 ><button ion-button color="light" round small (click)="anAccount()">Create an account</button></ion-col>
+  </ion-row>
+
+
+  <ion-footer>
+    <ion-toolbar>
+      <ion-grid>
+        <button ion-button style="text-align: center;" color="secondary" small >Terms of Use</button>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-footer>
+
+
+
+</ion-content>

@@ -1,0 +1,54 @@
+
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      More Languages
+    </ion-title>
+  </ion-navbar>
+
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button value="Front">
+        Front End
+      </ion-segment-button>
+      <ion-segment-button value="kittens">
+        Back End
+      </ion-segment-button>
+      <ion-segment-button value="ducklings">
+       Database
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div [ngSwitch]="pet" >
+
+    <ion-list *ngSwitchCase="'Front'" >
+      <ion-item *ngFor="let item of items">
+        <ion-thumbnail item-start>
+          <img src="assets/img/{{item.img}}">
+        </ion-thumbnail>
+        <p>{{item.title}}</p>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'kittens'">
+      <ion-item *ngFor="let bac of back">
+        <ion-thumbnail item-start>
+          <img src="assets/img/{{bac.img}}">
+        </ion-thumbnail>
+        <p>{{bac.title}}</p>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'ducklings'">
+      <ion-item *ngFor="let prog of progg">
+        <ion-thumbnail item-start>
+          <img src="assets/img/{{prog.img}}">
+        </ion-thumbnail>
+        <p>{{prog.title}}</p>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

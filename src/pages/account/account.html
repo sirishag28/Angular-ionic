@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Create an Account</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label stacked>Enter your name</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Email</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6> <button ion-button outline (click)="doConfirm()">Create account</button></ion-col>
+      <ion-col col-6 style="text-align: center;">&nbsp;&nbsp;Have an Account<br/><button ion-button color="light"
+      (click)="goTO()">Sign In</button></ion-col>
+    </ion-row>
+  </ion-grid>
+   <p>By clicking on "Create account" you agree to our Terms of Use and Privacy Policy</p>
+  <br/>
+  <ion-row>
+    <ion-col col-4><hr/></ion-col>
+    <ion-col col-4 style="text-align: center;">or</ion-col>
+    <ion-col col-4><hr/></ion-col>
+  </ion-row>
+  <br/>
+  <ion-row>
+      <button ion-button color="light" full ><img src="https://avatars0.githubusercontent.com/u/1342004?s=400&v=4"         style="width: 15px;"/>&nbsp;Sign up with Google</button>
+  </ion-row>
+</ion-content>

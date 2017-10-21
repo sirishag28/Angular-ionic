@@ -1,0 +1,28 @@
+page-main {
+  background-color: #19ab1e;
+}
+.card-background-page {
+
+  ion-card {
+    position: relative;
+    text-align: center;
+  }
+
+  .card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #19ab1e;
+  }
+
+  .button-outline-ios {
+
+    border-color: blue;
+    color: blue;
+
+  }
+
+
+}

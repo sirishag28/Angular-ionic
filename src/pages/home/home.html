@@ -1,0 +1,75 @@
+
+<ion-content>
+  <ion-slides pager (ionSlideDidChange)="slideChanged()" >
+    <ion-slide>
+      <div class="diag" style="height:58%;">
+        <div class="enjoy-css">K-Tube</div>
+          <ion-card class="card2">
+            <ion-card-content class="card1">
+              <img src='assets/img/play.png' />
+            </ion-card-content>
+            <ion-item>
+              <ion-row>
+                <ion-col col-6><ion-icon ios="ios-star" md="md-star" class="star"></ion-icon>(1467)</ion-col>
+                <ion-col col-6><button ion-button color="secondary" small style="float: right;"
+                                       (click)="doAlert()">$10</button></ion-col>
+              </ion-row>
+            </ion-item>
+          </ion-card>
+      </div>
+      <div>
+        <h2>Welcome</h2>
+        <p>Enjoy your favorite Coding and channels with the official KTube App</p>
+
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="diag">
+        <h1 class="logo"><b>K-Tube</b></h1>
+        <ion-card>
+          <ion-card-content >
+            <img  src='assets/img/logo.jpeg' style="display: inline-block;width: 75px;"/>
+            <p>Krishna Kondoju</p>
+            <span>Author and Programmer</span>
+          </ion-card-content>
+          <ion-item>
+            <ion-row>
+              <ion-col col-4>8301<br/><span>Students</span></ion-col>
+              <ion-col col-4>6<br/><span>Courses</span></ion-col>
+              <ion-col col-4>4.6/5<br/><span>Rating</span></ion-col>
+            </ion-row>
+          </ion-item>
+        </ion-card>
+      </div>
+      <div>
+        <h2>Learn from Experts</h2>
+        <p>Approchable expert-instructors,vetted by 1200 studens</p>
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div class="diag" style="background: url('assets/img/white.svg') no-repeat">
+        <ion-icon ios="ios-bug-outline" md="ios-bug" color="danger"></ion-icon>
+      </div>
+
+      <div>
+        <h2>Go at Your Own Pace</h2>
+        <p>Lifetime access to courses, watch them anytime,anywhere</p>
+      </div>
+    </ion-slide>
+  </ion-slides>
+<!--footer started-->
+  <ion-footer>
+    <ion-toolbar>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-6>
+            <button ion-button color="secondary" small  (click)="skip()">{{ skipMsg }}</button>
+          </ion-col>
+          <ion-col col-6>
+            <button ion-button color="secondary" small style="float: right;" (click)="sign()">{{signIn}}</button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>
